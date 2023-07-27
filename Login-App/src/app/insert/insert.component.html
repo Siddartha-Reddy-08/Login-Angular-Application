@@ -1,0 +1,20 @@
+<div class="container">
+    <mat-card class="bord">
+        <h1>LOGIN</h1>
+        <mat-card-header>
+            <mat-form-field>
+                <mat-label>Roll No</mat-label>
+                <input matInput [(ngModel)]="rollNo">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-header>
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="name">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-header>
+            <button mat-raised-button (click)="sendInsertData()" routerLink="/display"> Insert </button>
+        </mat-card-header>
+    </mat-card>
+</div>

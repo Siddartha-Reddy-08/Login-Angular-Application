@@ -1,0 +1,23 @@
+<div>
+    <table mat-table [dataSource]="myresponse" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="sno">
+            <th mat-header-cell *matHeaderCellDef> S No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.sno}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="rollNo">
+            <th mat-header-cell *matHeaderCellDef> Roll No </th>
+            <td mat-cell *matCellDef="let element"> {{element.rollNo}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table><br>
+    <button type="button" (click)="insertedData();">GET DATA</button>
+</div>

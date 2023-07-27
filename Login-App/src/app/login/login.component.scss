@@ -1,0 +1,27 @@
+div {
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bord {
+    padding: 20px;
+}
+
+mat-card-header {
+    padding: 12px;
+}
+
+mat-form-field {
+    width: 400px;
+}
