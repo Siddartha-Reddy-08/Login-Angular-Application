@@ -12,7 +12,17 @@ export class InsertComponent {
   rollNo: String = '';
   name: String = '';
 
-  constructor(private http: HttpClient, private service: ServicesService) { }
+  displayedColumns: string[] = ['sno', 'rollNo', 'name'];
+  myresponse: any;
+
+  constructor(private http: HttpClient, private service: ServicesService) {
+    this.service.getInsertedData().subscribe(
+      data => {
+        this.myresponse = data;
+        console.log(this.myresponse);
+      },
+    );
+  }
 
   sendInsertData() {
     const insertData = {
@@ -20,12 +30,12 @@ export class InsertComponent {
       name: this.name,
     }
     this.service.setInsert(insertData).subscribe(
-      data => { 
+      data => {
         console.log(data);
         console.log(insertData.rollNo);
       },
       error => {
-        console.log('ERROR',error);
+        console.log('ERROR', error);
       }
 
     );

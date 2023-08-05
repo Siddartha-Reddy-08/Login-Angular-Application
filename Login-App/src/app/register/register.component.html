@@ -1,1 +1,27 @@
-<p>register works!</p>
+<div class="container">
+    <mat-card class="bord">
+        <h1>LOGIN</h1>
+        <mat-card-header>
+            <mat-form-field>
+                <mat-label>User Name</mat-label>
+                <input matInput [(ngModel)]="username">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-header>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" [(ngModel)]="password">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-header>
+            <mat-form-field>
+                <mat-label>Password</mat-label>
+                <input matInput type="password" [(ngModel)]="confirm_password">
+            </mat-form-field>
+        </mat-card-header>
+        <mat-card-header>
+            <!-- <button mat-raised-button (click)="setUserData()">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button mat-raised-button (click)="getRegister()">Register</button> -->
+        </mat-card-header>
+    </mat-card>
+</div>
