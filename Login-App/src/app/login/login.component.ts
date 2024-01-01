@@ -12,7 +12,7 @@ export class LoginComponent {
   username: String = '';
   password: String = '';
   hide = true;
-  userData:any;
+  userData: any;
   constructor(private servicesService: ServicesService, private router: Router) { }
 
   setUserData() {
@@ -20,7 +20,7 @@ export class LoginComponent {
     this.servicesService.getUsersData().subscribe(
       data => {
         this.userData = data;
-        console.log(this.userData);
+        console.log(data);
         this.checkDetails();
       },
       error => {
@@ -31,12 +31,13 @@ export class LoginComponent {
 
   checkDetails(): void {
     this.userData.forEach((element: { username: String; password: String }): void => {
-      if(element.username === this.username && element.password === this.password) {
+      if (element.username === this.username && element.password === this.password) {
         console.log(element.username);
         this.router.navigateByUrl('/insert');
       }
       else {
         console.log('Incorrect Details');
+        this.router.navigateByUrl('/');
       }
     });
   }

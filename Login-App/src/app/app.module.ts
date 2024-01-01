@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { RegisterComponent } from './register/register.component';
 import { InsertComponent } from './insert/insert.component';
 import { MatTableModule } from '@angular/material/table';
+import { MailComponent } from './mail/mail.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatTableModule } from '@angular/material/table';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    InsertComponent
+    InsertComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+{
+    "login_Url": "http://localhost:8080/Login/",
+    "register_Url": "http://localhost:8080/Register/",
+    "insert_Url": "http://localhost:8080/Insert",
+    "mail_Url": "http://localhost:8080/mail"
+}

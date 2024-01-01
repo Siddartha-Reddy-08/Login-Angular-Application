@@ -19,7 +19,7 @@ export class InsertComponent {
     this.service.getInsertedData().subscribe(
       data => {
         this.myresponse = data;
-        console.log(this.myresponse);
+        console.log(data);
       },
     );
   }
@@ -31,7 +31,7 @@ export class InsertComponent {
     }
     this.service.setInsert(insertData).subscribe(
       data => {
-        console.log(data);
+        this.myresponse = data;
         console.log(insertData.rollNo);
       },
       error => {

@@ -1,0 +1,24 @@
+<mat-card class="bord">
+    <h1>Register</h1>
+    <mat-card-header>
+        <mat-form-field>
+            <mat-label>User Name</mat-label>
+            <input matInput [(ngModel)]="mailId">
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-header>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="subject">
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-header>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="body">
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card-header>
+        <button mat-raised-button (click)="sendMailData()">Send Mail</button>
+    </mat-card-header>
+</mat-card>

@@ -8,6 +8,7 @@ div {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 19px;
+    width: 350px;
 }
 
 h1 {
@@ -23,5 +24,13 @@ mat-card-header {
 }
 
 mat-form-field {
-    width: 400px;
+    width: 320px;
+}
+
+.display-Table {
+    width: 664px;
+}
+button {
+    margin-top: 10px;
+    margin-left: 10px;
 }
